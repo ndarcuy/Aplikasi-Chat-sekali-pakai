@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ephemeral Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <pre class="ascii">
+<span class="logo">
+  ____/\____   .__                _____.__       .__     
+ /   / /_/  | _|__| ____    _____/ ____\__| _____|  |__  
+ \__/ / \|  |/ /  |/    \  / ___\   __\|  |/  ___/  |  \ 
+ / / /   \    <|  |   |  \/ /_/  >  |  |  |\___ \|   Y  \
+/_/ /__  /__|_ \__|___|  /\___  /|__|  |__/____  >___|  /
+  \/   \/     \/       \//_____/               \/     \/ 
+</span>
+<span class="brand">"by ndaru"</span>
+</pre>
+
+
+    <div class="chat-box">
+      <div id="messages"></div>
+
+      <form id="chat-form">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="type your message..."
+          autocomplete="off"
+        />
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
